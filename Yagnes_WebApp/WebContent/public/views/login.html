@@ -1,0 +1,39 @@
+<style>
+
+.vertical-offset-100{
+    padding-top:100px;
+}
+</style>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["email"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address\neg: arun@niit.com");
+        return false;
+    }
+    var y = document.forms["myForm"]["password"].value;
+
+    	if (y == null || y == "") {
+            alert("Password Can't be blank");
+            return false;
+        }
+    	    	
+}
+</script>
+
+<div class="container">
+	<div class="login-container">
+            <div id="output"></div>
+            <div class="avatar"></div>
+            <div class="form-box">
+                
+                    <input name="username" type="text" placeholder="user password" ng-model="username">
+                    <input type="password" placeholder="password" name="password" ng-model="password">
+                    <button class="btn btn-info btn-block login" ng-click="loginUser()">Login</button>
+                
+            </div>
+        </div>
+        
+</div>

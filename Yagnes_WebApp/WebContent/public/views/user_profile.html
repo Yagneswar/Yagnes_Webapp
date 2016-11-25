@@ -1,0 +1,55 @@
+
+<br><br><br><br>
+
+<div class="container">
+<div class="row">
+  <!--<form role="form" ng-submit="insertBlog()" method="post" >-->
+      <div class="col-lg-3">
+          </div>
+    <div class="col-lg-6">
+      <div class="form-group">
+        <label for="InputTitle">Blog Title</label>
+        <div class="input-group">
+          <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Title" required ng-model="title">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+      </div>
+      <div class="form-group">
+        <label for="InputCategory">Blog Category</label>
+        <div class="input-group">
+          <select id="InputCategory" name="InputCategory" class="form-control" ng-model="category">
+				<option value="Education" selected="">Education</option>
+				<option value="Entertainment">Entertainment</option>
+				<option value="Awareness">Awareness</option>
+				<option value="others">Others</option>
+			</select>
+          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+      </div>
+      <div class="form-group">
+        <label for="InputEmail">Your Email</label>
+        <div class="input-group">
+          <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required ng-model="ownerid">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+      </div>
+      
+      <div class="form-group">
+        <label for="InputMessage">Discription</label>
+        <div class="input-group">
+          <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required ng-model="discription"></textarea>
+          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+      </div>
+      <div class="form-group">
+        <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
+        <div class="input-group">
+          <input type="text" class="form-control" name="InputReal" id="InputReal" required>
+          <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+      </div>
+      <input type="button" name="submit" id="submit" value="Submit" class="btn btn-info pull-right" ng-click="insertBlog()">
+    </div>
+  <!--</form>-->
+  <hr class="featurette-divider hidden-lg">
+
+  <div class="col-lg-3">
+          </div>
+</div>
+
+</div>

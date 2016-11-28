@@ -5,7 +5,7 @@ $scope.insertBlog=function(){
 alert($scope.category);
 
 if($scope.title!==null||$scope.ownerid!==null||$scope.discription!==null){
-      $http.post('http://localhost:8087/Collaboration/blog/insert/'+$scope.title+'/'+$scope.ownerid+'/'+$scope.discription+'/'+$scope.category).success(function(data, status, headers, config) {
+      $http.post('http://localhost:8087/Yagnes_collaboration/blog/insert/'+$scope.title+'/'+$scope.ownerid+'/'+$scope.discription+'/'+$scope.category).success(function(data, status, headers, config) {
 
 alert('Blog inserted Waiting for For Admin Approval');
     $location.path('/profile');          

@@ -7,7 +7,7 @@ $scope.createUser=function(){
 
 
 if($scope.name!==null||$scope.password!==null||$scope.username!==null){
-      $http.post('http://localhost:8989/arun_online_collaboration/user/'+$scope.username+'/'+$scope.name+'/'+$scope.password).success(function(data, status, headers, config) {
+      $http.post('http://localhost:8087/Yagnes_collaboration/user/'+$scope.username+'/'+$scope.name+'/'+$scope.password).success(function(data, status, headers, config) {
 
 alert('Welcome to MyBlog.com');
     $location.path('/login');          

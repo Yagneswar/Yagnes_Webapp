@@ -90,7 +90,13 @@ public class ApplicationContextConfig {
 	public BlogDAO getBlogDetailsDAO(SessionFactory sessionFactory) {
 		return new BlogDAOImpl(sessionFactory);
 	}
-
+	
+	
+	@Autowired
+	@Bean(name = "friendDAO")
+	public BlogDAO getFriendDetailsDAO(SessionFactory sessionFactory) {
+		return new BlogDAOImpl(sessionFactory);
+	}
 
 
 }

@@ -85,7 +85,7 @@ app.controller('AdminController', function($scope,$http,$location) {
 
 //get method to display the register users
 fetchAllUsers=function(){
-		    $http.get('http://localhost:8087/Collaboration/user').
+		    $http.get('http://localhost:8087/Yagnes_collaboration/user').
         success(function(data, status, headers, config) {
             $scope.allusers = data;			
 		return $scope.allusers;
@@ -103,7 +103,7 @@ fetchAllUsers();
             alert(username);
       var x=confirm("Are you sure you want to delete ?");
       if(x){
-        $http.delete('http://localhost:8989/arun_online_collaboration/user/'+username).success(function (response) {
+        $http.delete('http://localhost:8087/Yagnes_collaboration/user/'+username).success(function (response) {
 fetchAllUsers();
             alert('deleted successfuly');
       })
@@ -113,7 +113,7 @@ fetchAllUsers();
 
 //updating the status of blogs
 $scope.updateBlog=function(id){
-        $http.put('http://localhost:8989/arun_online_collaboration/blog/update/'+id).success(function (response) {
+        $http.put('http://localhost:8087/Yagnes_collaboration/blog/update/'+id).success(function (response) {
 
             alert('updated successfuly');
       })
@@ -125,7 +125,7 @@ $scope.updateBlog=function(id){
 fetchblogs=function(){
 alert('working');
 // getting the blogs 
-    $http.get('http://localhost:8989/arun_online_collaboration/blog/allblogs').
+    $http.get('http://localhost:8087/Yagnes_collaboration/blog/allblogs').
         success(function(data, status, headers, config) {
             $scope.blogs = data;
             console.log($scope.blogs);

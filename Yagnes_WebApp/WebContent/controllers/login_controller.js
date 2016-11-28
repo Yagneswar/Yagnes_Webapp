@@ -3,7 +3,7 @@ app.controller('LoginController', function($scope,$http,$location) {
 $scope.loginUser=function(){
     
 alert($scope.username+''+$scope.password);
-      $http.post('http://localhost:8087/Collaboration/login/'+$scope.username+'/'+$scope.password).success(function(data, status, headers, config,statusText) {
+      $http.post('http://localhost:8087/Yagnes_collaboration/login/'+$scope.username+'/'+$scope.password).success(function(data, status, headers, config,statusText) {
 
           if(status===200 ){
               var user=data;
